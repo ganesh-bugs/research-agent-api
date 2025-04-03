@@ -1,0 +1,11 @@
+flask
+requests
+openpyxl
+pandas
+python-dotenv
+transformers
+torch
+langchain==0.1.14
+langchain-core==0.1.37
+langchain-openai==0.0.6
+openai==1.10.0
