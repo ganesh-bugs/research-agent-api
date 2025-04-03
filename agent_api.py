@@ -68,7 +68,7 @@ def run_agent():
 
     return jsonify({"message": f"Report created and emailed to {email}."})
 
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
-
+    import os
+    port = int(os.environ.get("PORT", 10000))  # 👈 this is key!
+    app.run(host="0.0.0.0", port=port)
